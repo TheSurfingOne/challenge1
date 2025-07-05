@@ -2,6 +2,8 @@ body , p {
     margin: 0px;
     padding: 0px;
     width: 100%;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .base {
@@ -41,7 +43,8 @@ body , p {
   display: flex;
   justify-content: center; 
   align-items: flex-end;    
-  padding-bottom: 20px;    
+  padding-bottom: 20px;   
+  font-size: 60px; 
 }
 
 
@@ -50,11 +53,26 @@ body , p {
     flex: 5;
     align-items: flex-start;
     padding-top: 40px;
+    font-size: 38px;
+}
+
+.see-more-section {
+    background-color: lightgreen;
+    flex: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
 }
 
 .see-more-button {
-    background-color: lightgreen;
-    flex: 2;
+    width: 130px;
+    height: 50px;
+    color: white;
+    background-color: grey;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
 }
 
 .socials {
