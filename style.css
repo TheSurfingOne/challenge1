@@ -6,6 +6,11 @@ body , p {
 
 }
 
+a {
+  all: unset;
+}
+
+
 .base {
     display: flex;
     background: linear-gradient(to right,rgb(40,40,40) ,rgb(86,86,86) );
@@ -16,9 +21,28 @@ body , p {
 
 .right-images , .left-images {
     flex: 1;
-    background-color: red;
+    /* background-color: red; */
 }
 
+.left-images {
+    height: 100%;
+    justify-content: center;
+    display: grid;
+    align-items: center;
+}
+
+.right-images {
+    height: 100%;
+    justify-content: center;
+    display: grid;
+    align-items: center;
+}
+
+
+.props{
+    margin-top: 30px;
+    box-shadow: 0px 0px 0px rgb(200, 0, 0);
+}
 
 .content {
     flex: 6;
@@ -38,8 +62,9 @@ body , p {
 
 
 .name {
-  background-color: lightblue;
+  /* background-color: lightblue; */
   flex: 3;
+  color: white;
   display: flex;
   justify-content: center; 
   align-items: flex-end;    
@@ -49,7 +74,8 @@ body , p {
 
 
 .description {
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
+    color: white;
     flex: 5;
     align-items: flex-start;
     padding-top: 40px;
@@ -57,7 +83,7 @@ body , p {
 }
 
 .see-more-section {
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     flex: 2;
     width: 100%;
     display: flex;
@@ -68,15 +94,23 @@ body , p {
 .see-more-button {
     width: 130px;
     height: 50px;
-    color: white;
-    background-color: grey;
-    border: none;
     border-radius: 10px;
     font-size: 20px;
+    transition: scale 0.2s;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-color: grey;
+    border-style: none;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.see-more-button:hover{
+    cursor: pointer;
+    scale: 1.2;
 }
 
 .socials {
-    background-color: grey;
+    /* background-color: grey; */
     flex: 4;
 }
 
@@ -97,4 +131,11 @@ body , p {
     background-color: black;
     border-radius: 10px;
     box-shadow: 0px 0px 10px;
+    transition: scale 0.1s;
+}
+
+
+.icon:hover {
+    scale: 1.1;
+    cursor: pointer;
 }
